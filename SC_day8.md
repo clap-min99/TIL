@@ -52,8 +52,8 @@
 
             현재 작업 중인 디렉토리 내부의 폴더/파일 목록을 출력
                 (ls-a 는 숨김파일까지 보는것.(a는 all을 의미))
-        - cd(change directory)
 
+        - cd(change directory)
 
             cd. : 현재 디렉토리
 
@@ -224,10 +224,54 @@
         
         현재 로컬 저장소에 등록된 원격 저장소 목록 보기
 
+    - git remote add origin remote_repo_url
+
+        로컬 저장소에 원격 저장소 추가
+
+        origin 자리에 원하는 이름 써도 된다
+        (클라우드에 있는 원격 저장소 이름을 origin이라고 하는 것은 개발자들 사이의 관행 같은 것)
+
     - git remote rm 원격_저장소_이름
 
         현재 로컬 저장소에 등록된 원격 저장소 삭제
         (저장소는 남아있고 연결이 끊어지는 것)
-        dd
 
+    - git push <remote><branch>
+
+        git push origin master
+        원격 저장소에 commit 목록을 업로드
+        로컬 저장소의 변경사항을 전송
+        
+    - git pull <remote><branch>
+        
+        git pull origin master
+        로컬 저장소의 변경사항만을 받아옴
+    
+    - git clone remote_repo_url
+
+        원격 저장소 전체를 복제(다운로드)
+        (clone으로 받은 프로젝트는 git init 되어있음)
+    
+    - git ignore
+        
+        git에서 특정 파일이나 디렉토리를 추적하지 않도록 사용되는 텍스트 파일
+        (프로젝트에 따라 공유하지 않아야 하는 것도 존재하기 때문)
+
+        - 예시
+            1. .gitignore 파일 생성
+
+                파일명 앞에 '.' 입력, 확장자 없음
+            
+            2. a.txt와 b.txt 파일 생성
+
+            3. gitignore에 a.txt 작성
+
+            4. git init
+
+            5. git status
+        
+        - gitignore 목록 생성 서비스
+
+            [gitignore](https://www.toptal.com/developers/gitignore/)
+    
     
