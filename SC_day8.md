@@ -161,7 +161,7 @@
             마치 사진을 찍듯이 기록한다 하며 snapshot이라고도 함
 
 - Git 명령어
-    - git init
+    - **git init**
         
         로컬 저장소 설정(초기화)
 
@@ -177,7 +177,7 @@
 
             git 저장소 안에 git 저장소가 있을 경우 가장 바깥쪽의  git 저장소가 안쪽의 git 저장소의 변경사항을 추적할 수 없기 때문
 
-    - git add
+    - **git add**
         
         변경사항이 있는 파일을 staging area에 추가
 
@@ -193,7 +193,7 @@
 
         git add . (지금 내가 관리하고 있는 파일을 전부 추가할 것이다)
 
-    - git commit
+    - **git commit**
     
         staging area 에 있는 파일들을 저장소에 기록
 
@@ -201,13 +201,13 @@
 
         (ex)  git commit -m"login 기능 추가'
 
-    - git commit --amend
+    - **git commit --amend**
 
         파일이나 커밋 메시지 형식을 잘못된 방법으로 지정했을 때 --amend 플래그를 이용해 실수를 해결할 수 있다.
 
         (ex) git commit --amend -m "an updated commit message"
 
-    - git log
+    - **git log**
 
         commit history 보기
 
@@ -216,43 +216,43 @@
             commit 한 줄로 보기
 
         
-    - git status
+    - **git status**
 
         현재 로컬 저장소의 파일 상태 보기
 
-    - git remote -v
+    - **git remote -v**
         
         현재 로컬 저장소에 등록된 원격 저장소 목록 보기
 
-    - git remote add origin remote_repo_url
+    - **git remote add origin remote_repo_url**
 
         로컬 저장소에 원격 저장소 추가
 
         origin 자리에 원하는 이름 써도 된다
         (클라우드에 있는 원격 저장소 이름을 origin이라고 하는 것은 개발자들 사이의 관행 같은 것)
 
-    - git remote rm 원격_저장소_이름
+    - **git remote rm 원격_저장소_이름**
 
         현재 로컬 저장소에 등록된 원격 저장소 삭제
         (저장소는 남아있고 연결이 끊어지는 것)
 
-    - git push <remote><branch>
+    - **git push <remote><branch>**
 
         git push origin master
         원격 저장소에 commit 목록을 업로드
         로컬 저장소의 변경사항을 전송
         
-    - git pull <remote><branch>
+    - **git pull <remote><branch>**
         
         git pull origin master
         로컬 저장소의 변경사항만을 받아옴
     
-    - git clone remote_repo_url
+    - **git clone remote_repo_url**
 
         원격 저장소 전체를 복제(다운로드)
         (clone으로 받은 프로젝트는 git init 되어있음)
     
-    - git ignore
+    - **git ignore**
         
         git에서 특정 파일이나 디렉토리를 추적하지 않도록 사용되는 텍스트 파일
         (프로젝트에 따라 공유하지 않아야 하는 것도 존재하기 때문)
