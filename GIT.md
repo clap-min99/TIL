@@ -26,7 +26,7 @@
 
     6. git 저장소(repositiory)와 연결하기
 
-        git remote add origin code
+        git remote add origin <code>
         (origin은 지정가능, code는 repository 주소)
 
     7. git에 파일 올리기
@@ -41,4 +41,28 @@
 
 > GITHUB에서 가져오기
 
-    1. 
+    1. 바탕화면에 Git repository에 있는 파일 가져오기
+
+        git clone <code>
+        (.git 폴더가 생성되어 있으므로 git init 하지 않도록 주의!) 
+
+    2. 파일에서 code 열기
+    (파일은 Git 저장소명으로 저장됨)
+
+        .code로 VSCode 실행
+    
+    3. 파일 확인 후 수정
+
+        git add sth.txt         
+
+    4. 변경 이력(commit) 남기기
+
+        git commit -m 'changed!'
+
+    5. git에 올리기
+        
+        git push origin master
+
+    6. Git에서 변경된 내용 가져오기
+
+        git pull origin master
