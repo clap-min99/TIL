@@ -169,9 +169,9 @@
 
         사용자 이름 설정: git config --global user.name "NAME"
 
-        사용자 이메일 설정: git config =--global user.email "EMAIL"
+        사용자 이메일 설정: git config --global user.email "EMAIL"
 
-        설정 확인하기: git config ==list
+        설정 확인하기: git config --list
 
 
     - **git init**
