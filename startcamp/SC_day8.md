@@ -161,6 +161,19 @@
             마치 사진을 찍듯이 기록한다 하며 snapshot이라고도 함
 
 - Git 명령어
+    - **git config**
+
+        git 최초 설정하기!
+        
+        사용자 이름, 이메일 주소 설정 -> git이 commit 할때마다 사용하는 정보
+
+        사용자 이름 설정: git config --global user.name "NAME"
+
+        사용자 이메일 설정: git config =--global user.email "EMAIL"
+
+        설정 확인하기: git config ==list
+
+
     - **git init**
         
         로컬 저장소 설정(초기화)
