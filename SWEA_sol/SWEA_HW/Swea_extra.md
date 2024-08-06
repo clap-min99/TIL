@@ -33,7 +33,7 @@ for tc in range(1, T + 1):
         for y in range(M):
             s = arr[x][y]               # x,y 좌표에 있는 꽃가루 개수
             for dx, dy in dxy:
-                for i in range(1, s+1):
+                for i in range(1, arr[x][y]+1):
                     nx = x + i*dx
                     ny = y + i*dy
                     if 0 <= nx < N and 0 <= ny < M:
@@ -41,4 +41,7 @@ for tc in range(1, T + 1):
             result.append(s)
     print(f'#{tc} {max(result)}')
 ```
--> 아직 푸는중 (...)
+Sol_point
+- 현 좌표에 있는 꽃가루 개수의 좌표만큼 꽃가루가 터지므로 방향벡터에 x,y 좌표의 꽃가루 수 만큼 곱해서 값을 구한다.
+
+- 범위 설정 시 for문 안에서 변하는 값을 설정하면 루프가 제대로 작동하지 않는다. 
