@@ -1,107 +1,5 @@
-# 스타트캠프 8일차
-## 2024-07-11
+## 2024-07-12
 
-### 마크다운(Markdown)
--  마크다운을 사용하는 이유
-    - 개발자들끼리 코드를 서로 주고받기 좋음
-    - 글을 쓰면서 서식을 설정할 수 있음
-    - 문법이 간단한 편이다
-    - 개발자들의 소통방식 (git hub)
-
-- 마크다운 사용법
-    - #: heading1
-    - ##: heading2
-    - -: list
-    - ** **: bold
-    - *{} *: Italic
-    - ---: horizontal rule
-    - '>': blockquote
-    -  [이름](url): link  
-    - ![alt](url): image
-    - Table
-        |헤더1|헤더2|헤더3|
-        |------|------|------|
-        |내용1|내용2|내용3|
-        |내용4|내용5|내용6|
-    - 소스코드
-        ```python
-        print (f"나는 어제 {%d}시에 잠들었어", %d)
-        ```
----    
-### GUI와 CLI
-- GUI 
-    
-    그래픽을 통해 사용자와 컴퓨터가 상호작용하는 방식
-
-- CLI
-    - directory?
-        - 위계구조를 나누는 방법
-        - 지금은 폴더의 개념으로 생각해도 무관
-
-    - **경로**(현재 나의 위치)를 아는 것이 중요
-
-    - 기초문법
-        - dash
-            
-            dash 명령어에서는 스페이스를 사용하면 단어를 따로 인식한다.
-           
-           파일명을 영어로 하고 스페이스는 사용하지 않는다. 
-           
-           단어 사이에 공백을 나타내고 싶으면 언더바(_)를 사용한다.
-        - ls
-
-            현재 작업 중인 디렉토리 내부의 폴더/파일 목록을 출력
-                (ls-a 는 숨김파일까지 보는것.(a는 all을 의미))
-
-        - cd(change directory)
-
-            cd. : 현재 디렉토리
-
-            cd.. : 현재의 상위 디렉토리
-
-            cd 파일명 : 하위 디렉토리로 이동
-
-            cd 파일명1/파일명2 
-            
-            : 파일명 1에 있는 파일명2로 이동. 하위 파일로 계속 이동하려면 슬래시(/)사용
-            
-            ex. 
-            
-            cd layer1/layer2
-           
-            cd ../..
-
-        - mkdir
-
-            새 디렉토리 생성
-        
-        - touch 
-
-            파일 생성 
-
-            (ex)touch a.txt 메모장 만들기
-
-        - start
-
-            파일 열기 
-
-            (ex) start a.txt 메모장 열기
-        
-        - pwd(print working directory)
-
-            어떤 OS를 사용하든지 사용 가능
-
-            root directory부터 현재까지의 경로를 보여줌(절대경로)
-
-            ex. /c/Users/SSAFY/Desktop/layer1
-
-            * 상대경로
-                
-                현재 작업하고 있는 디렉토리를 기준으로 계산된 상대적 위치를 작성한 것
-
-                만약 현재 작업하고 있는 디렉토리가 C:/Users 일때 윈도우 바탕화면으로의 상대경로는 ssafy/Desktop
-
----
 ### Git
 버전을 관리하는 프로그램(분산 버전 관리 시스템)
 
@@ -286,5 +184,96 @@
         - gitignore 목록 생성 서비스
 
             [gitignore](https://www.toptal.com/developers/gitignore/)
+
+#### 원격저장소란? (remote repository)
+ 코드와 버전 관리 이력을 온라인 상의 특정 위치에 저장하여 여러 개발자가 협업하고 코드를 공유할 수 있는 저장 공간
+
+
+> GITHUB에 올리기
+
+    1. 바탕화면에 파일 생성
+
+        mkdir 파일명
     
+    2. 파일 안에 텍스트 파일 생성
     
+        touch sth.txt
+    
+    3. 텍스트 파일에 내용 작성(변경) 후 저장(ctrl+s)
+
+    4. 파일을 Staging area에 놓기
+
+        git add sth.txt
+    
+    5. 변경 이력 남기기
+
+        git commit -m 'sth is changed'
+
+    6. git 저장소(repositiory)와 연결하기
+
+        git remote add origin <code>
+        (origin은 지정가능, code는 repository 주소)
+
+    7. git에 파일 올리기
+
+        git push origin master
+        (지정한 origin으로)
+
+    8. git에 올라온 파일 가져오기
+
+        git pull origin master 
+
+
+> GITHUB에서 가져오기
+
+    1. 바탕화면에 Git repository에 있는 파일 가져오기
+
+        git clone <code>
+        (.git 폴더가 생성되어 있으므로 git init 하지 않도록 주의!) 
+
+    2. 파일에서 code 열기
+    (파일은 Git 저장소명으로 저장됨)
+
+        code. 으로 VSCode 실행
+    
+    3. 파일 확인 후 수정
+
+        git add sth.txt         
+
+    4. 변경 이력(commit) 남기기
+
+        git commit -m 'changed!'
+
+    5. git에 올리기
+        
+        git push origin master
+
+    6. Git에서 변경된 내용 가져오기
+
+        git pull origin master
+
+
+> 
+
+
+
+
+
+
+
+#### GitHuB 활용하기
+- TIL을 통해 내가 학습하는 것을 기록
+    - TIL(Today I learned)
+        매일 내가 배운 것을 마크다운으로 정리해서 문서화 하는 것
+
+- 개인, 팀 프로젝트 코드를 공유
+    개발 면접 지원 시 본인의 GitHub 주소를 공유해 어떤 프로젝트를 진행했고,
+    어떤 코드를 작성했는지 공유하고 평가받기 위해 사용
+
+- 오픈 소스 프로젝트에 기여
+
+- README.md 파일
+    
+    프로젝트에 대한 설명, 사용방법, 문서화된 정보 등을 포함하는 역할
+
+    markdown 형식으로 작성
