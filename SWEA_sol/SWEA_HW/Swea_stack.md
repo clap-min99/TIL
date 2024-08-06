@@ -98,6 +98,7 @@ C 1글자가 남았으므로 1을 리턴한다.
 
 
 ```py
+# 단어 순회하면서 검사하고, 겹치면 삭제
 T = int(input())
 
 for tc in range(1, T+1):
@@ -118,6 +119,31 @@ for tc in range(1, T+1):
 
     print(f'#{tc} {ans}')
 ```
+```py
+# stack 이용해서 풀기 
+T = int(input())
+
+for tc in range(1, T+1):
+    stack = []
+    word = input()
+    for idx in word:
+        if not stack or idx != stack[-1]:
+            # stack에 아무것도 없거나, 비교할 글자가 가장 최근에 append한 글자와 다를 때
+            stack.append(idx)     # stack에 단어 쌓기
+        elif idx == stack[-1]:    # 비교할 글자가 가장 최근에 append한 글자와 같으면
+            stack.pop()           # stack의 top에 있는 글자 빼기
+
+    ans = len(stack)
+    print(f'#{tc} {ans}')
+```
+- Sol point
+    연속된 글자끼리 비교하면서 쌓아가기 
+    stack에 쌓아가면서 가장 최근에 append한 글자를 하나씩 비교하여
+    같다면 pop(가장 최근에 append한 글자를 뽑아냄) 아니면 stack에 쌓아가는 방식
+    
+    stack에 처음 단어를 넣을 때 stack에 아무것도 없을 때도 고려해야함,,
+    (if not stack)
+---
 #### 괄호 검사 2
 
 주어진 입력에서 괄호 {}, ()가 제대로 짝을 이뤘는지 검사하는 프로그램을 만드시오.
