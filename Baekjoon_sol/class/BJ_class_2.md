@@ -76,3 +76,31 @@ for i in range(len(ans)):
       : 문자열 길이를 기준으로 정렬
 
 ---
+#### 수 정렬하기 2(#2571)
+N개의 수가 주어졌을 때 이를 오름차순으로 정렬하는 프로그램 작성.
+
+**입력**
+
+첫째 줄에 수의 개수 N(1 ≤ N ≤ 1,000,000)이 주어진다. 둘째 줄부터 N개의 줄에는 수가 주어진다. 이 수는 절댓값이 1,000,000보다 작거나 같은 정수이다. 수는 중복되지 않는다.
+
+**출력**
+
+첫째 줄부터 N개의 줄에 오름차순으로 정렬한 결과를 한 줄에 하나씩 출력한다.
+
+```python
+import sys
+input = sys.stdin.readline
+
+T = int(input())
+
+arr = []
+for i in range(1,T+1):
+    arr.append(int(input()))
+
+arr.sort()
+
+for j in range(len(arr)):
+    print(arr[j])
+```
+Sol point
+- sys를 불러와서 input 해주면 시간이 줄어든다.?
