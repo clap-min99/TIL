@@ -1,4 +1,7 @@
+# Programmers 기능개발
+
 import math
+
 
 def solution(progresses, speeds):
     spend_date = []
@@ -31,4 +34,4 @@ def solution(progresses, speeds):
             comp = 1        # 비교 인덱스도 1로 초기화
 
 
-print(solution([93, 30, 55],[1, 30, 5]))
+print(solution([93, 30, 55], [1, 30, 5]))
