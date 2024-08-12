@@ -11,3 +11,5 @@ arr.sort()
 
 for j in range(len(arr)):
     print(arr[j])
+
+# 2차원배열
