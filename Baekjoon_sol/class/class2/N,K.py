@@ -1,11 +1,13 @@
 # 11050 이항계수
+import sys
+input = sys.stdin.readline
+
 N, K = map(int, input().split())
 
 def factorial(N):
-    if N==1:
+    if N==0 or N==1:
         return 1
-    f = N*factorial(N-1)
-    return f
+    else:
+        return N*factorial(N-1)
 
-ans = factorial(N)/(factorial(K)*factorial(N-K))
-print(int(ans))
+print(factorial(N)//(factorial(K)*factorial(N-K)))

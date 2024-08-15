@@ -104,3 +104,42 @@ for j in range(len(arr)):
 ```
 Sol point
 - sys를 불러와서 input 해주면 시간이 줄어든다.?
+
+---
+#### 이항계수1(#11050)
+자연수 
+\(N\)과 정수 
+\(K\)가 주어졌을 때 이항 계수 
+\(\binom{N}{K}\)를 구하는 프로그램을 작성하시오.
+
+**입력**
+
+첫째 줄에 
+\(N\)과 
+\(K\)가 주어진다. (1 ≤ 
+\(N\) ≤ 10, 0 ≤ 
+\(K\) ≤ 
+\(N\))
+
+**출력**
+ 
+\(\binom{N}{K}\)를 출력한다.
+
+```py
+import sys
+input = sys.stdin.readline
+
+N, K = map(int, input().split())
+
+def factorial(N):
+    if N==0 or N==1:
+        return 1
+    else:
+        return N*factorial(N-1)
+
+print(factorial(N)//(factorial(K)*factorial(N-K))) # 왜 몫을..?
+```
+Sol point
+  - 재귀함수로 팩토리얼 정의하기
+
+---
