@@ -23,7 +23,7 @@ def start_p(N):
     return -1, 1
    
 T = 10
-N =16
+N = 16
 for tc in range(1, T+1):
     visited = [[0]*N for _ in range(N)]
     maze = [list((map(int, input()))) for _ in range(16)]
