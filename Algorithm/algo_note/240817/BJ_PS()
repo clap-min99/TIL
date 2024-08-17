@@ -1,0 +1,37 @@
+# 9012 괄호
+T = int(input())
+# for tc in range(1,T+1):
+#     PS = input()
+#     stack = []
+#     for brac in PS:
+#         if brac == '(':
+#             stack.append(brac)
+#         if brac == ')':
+#             if not stack or stack[-1] != '(':
+#                 print('NO')
+#             elif stack[-1] == '(':
+#                 stack.pop()                
+#     if len(stack) == 0:
+#         print('YES')
+#     else: 
+#         print('NO')
+
+def bracket(codes):
+    stack = []
+    for i in codes:
+        if i == '(':
+            stack.append(i)
+        if i == ')':
+            if not stack or stack[-1] != '(':
+                return('NO')
+            elif stack[-1] == '(':
+                stack.pop()
+    if len(stack) == 0:
+        return('YES')
+    else:
+        return('NO')
+
+for tc in range(1, T+1):
+    brackets = input()
+    a = bracket(brackets)
+    print(a)        
