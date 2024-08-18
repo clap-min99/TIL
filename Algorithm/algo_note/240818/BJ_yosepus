@@ -1,0 +1,17 @@
+from collections import deque
+N, K = map(int, input().split())
+list = []
+for i in range(1, N+1):
+    list.append(i)
+
+arr = deque(list)
+arr.rotate(-(K-1))
+
+yos = []
+for _ in range(N):
+    yos.append(str(arr.popleft()))
+    arr.rotate(-(K-1))
+
+print(f'<', end ='')
+print(', '.join(yos), end='')
+print(f'>')
