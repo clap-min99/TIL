@@ -1,6 +1,7 @@
 #2635 수 이어가기
 N = int(input())
 find_max = []
+cnt_list = []
 for i in range(N-1, 0, -1):
     cnt = 2
     sub_list= [N]
@@ -12,12 +13,15 @@ for i in range(N-1, 0, -1):
         if j < 0:
             sub_list.pop()
             cnt -= 1
+            cnt_list.append(cnt)
             find_max.append([cnt, sub_list])
             break
 
-find_max.sort()
-print(find_max[-1][0])
-print(*find_max[-1][1])
+print(max(cnt_list))
+for i in range(N):
+    if find_max[-i][0] == max(cnt_list):
+        print(find_max[-i][0])
+        print(*find_max[-i][1])
 
 
 
