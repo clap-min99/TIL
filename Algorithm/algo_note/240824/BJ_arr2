@@ -1,0 +1,9 @@
+N= int(input())
+
+coor_list = []
+for i in range(N):
+    x, y = map(int, input().split())
+    coor_list.append((x, y))
+
+for i in sorted(coor_list, key = lambda x: x[1]):
+    print(i[0], i[1])

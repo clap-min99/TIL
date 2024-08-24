@@ -1,0 +1,46 @@
+#2108 통계학
+from collections import Counter
+import math
+import sys
+input = sys.stdin.readline
+
+N = int(input())
+nums = [int(input()) for _ in range(N)]
+
+
+s = 0
+for i in nums:
+    s += i
+
+ans1 = round(s/N) # 산술평균
+print(ans1)
+
+nums.sort()
+ans2 = nums[N//2] # 중앙값
+print(ans2)
+
+cnt_num = Counter(nums)  # 각 숫자가 나온 횟수 세기
+cnt_lst = []
+for i in nums:
+    cnt_lst.append((i, cnt_num[i]))  # 값과 그 횟수를 list에 넣기
+# 중복되는 리스트 제거
+cnt_lst = set(cnt_lst)
+# 빈도수 많은 순서대로 정렬
+cnt_lst = sorted(cnt_lst, key= lambda x: (x[1], -x[0]), reverse=True)  
+
+most_list = []  # 최빈값만 모을 리스트
+for x in range(len(cnt_lst)):
+    if cnt_lst[0][1] == cnt_lst [x][1]:
+        most_list.append(cnt_lst[x])
+
+
+if len(most_list) >= 2:
+    print(most_list[1][0])
+else: 
+    print(most_list[0][0])
+
+ans4 = nums[-1] - nums[0]
+
+print(ans4)
+
+## 시간초과,,, 
