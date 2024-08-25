@@ -1,0 +1,23 @@
+s = 1
+def DFS(s):
+    visited[s] = 1
+    v = s
+    result.append(v)
+    for w in adj[v]:
+        if visited[w] == 0:
+            DFS(w)
+
+
+V, E = map(int, input().split())
+adj =[[] for _ in range(V+1)]
+arr = list(map(int, input().split()))
+visited = [0]*(V+1)
+for i in range(V+1):
+    v1 = arr[2*i]
+    v2 = arr[2*i+1]
+    adj[v1].append(v2)
+    adj[v2].append(v1)
+    
+result = []
+DFS(s)
+print(f'#1 {"-".join(map(str, result))}')
