@@ -1,0 +1,37 @@
+# V, E = map(int, input().split())
+
+def dfs(s):      # s = 시작, V = 간선개수
+    visited[s] = 1
+    stack = []
+    v = s   # 현재 정점
+    result = [v]
+    while True:
+        for w in (adjl[v]):
+            if visited[w] == 0:
+                stack.append(w)
+                visited[w] = 1
+                v=w
+                result.append(v)
+                break
+        else:
+            if stack:
+                v = stack.pop()
+            else:
+                break
+    return result
+
+
+V,E = map(int, input().split())
+arr = list(map(int, input().split()))
+visited = [0]*(V+1)     # 방문한 노드
+adjl = [[] for _ in range(V+1)]
+s = 1
+T = 1
+for i in range(E):
+    v1 = arr[i*2]
+    v2 = arr[i*2+1]
+    adjl[v1].append(v2)
+    adjl[v2].append(v1)
+
+result = dfs(s)
+print(f'#{T} {"-".join(map(str, result))}')

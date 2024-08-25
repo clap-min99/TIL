@@ -1,0 +1,36 @@
+#4871 그래프 경로
+def DFS(S, G):
+    visited = [0]*(V+1)
+    visited[S] = 1
+    stack = []
+    
+    v = S
+
+    while True:
+        for w in adj_lst[v]:
+            if visited[w] == 0:
+                stack.append(v)
+                v = w
+                visited[v] = 1
+                break
+        else:
+            if stack:
+                v = stack.pop()
+            else:
+                break
+        if v == G:
+            return 1
+    return 0
+
+T = int(input())
+for tc in range(1, T+1):
+    V, E =map(int, input().split())
+   
+    adj_lst = [[] for _ in range(V+1)]
+    for i in range(E):
+        x , y = map(int, input().split())        
+        adj_lst[x].append(y)
+        
+    S, G = map(int, input().split())
+    result = DFS(S,G)
+    print(f'#{tc} {result}')
