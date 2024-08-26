@@ -22,7 +22,7 @@ count = [0]*10001
 
 for _ in range(n):
     num = int(input())
-    count[num] = +1
+    count[num] += 1
 
 for i in range(10001):
     if count[i] != 0:

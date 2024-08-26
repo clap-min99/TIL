@@ -1,3 +1,4 @@
+# 직사각형 4개의 합집합 면적 구하기
 dot = [list(map(int, input().split())) for _ in range(4)]
 
 visited =[[0]*100 for _ in range(100)]

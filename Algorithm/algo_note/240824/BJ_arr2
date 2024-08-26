@@ -1,3 +1,5 @@
+# 11561 좌표 정렬하기2
+
 N= int(input())
 
 coor_list = []
@@ -5,5 +7,6 @@ for i in range(N):
     x, y = map(int, input().split())
     coor_list.append((x, y))
 
-for i in sorted(coor_list, key = lambda x: x[1]):
+for i in sorted(coor_list, key = lambda x: (x[1], x[0])):
     print(i[0], i[1])
+

@@ -1,5 +1,6 @@
 # 10814 나이순 정렬
-
+import sys
+input = sys.stdin.readline
 N = int(input())
 
 name_lst = [list(input().split()) for _ in range(N)]
@@ -10,3 +11,5 @@ for i in range(N-1, 0 ,-1):
 
 for i in range(N):
     print(*name_lst[i])
+
+# 시간초과(...)

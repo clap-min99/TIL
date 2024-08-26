@@ -1,3 +1,4 @@
+# 11866 요세푸스 문제 
 from collections import deque
 N, K = map(int, input().split())
 list = []

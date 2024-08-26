@@ -14,6 +14,9 @@ for i in range(T):
             continue
         print(a[0])
     elif q[0] == 'back':
+        if not a:
+            print(-1)
+            continue
         print(a[-1])
     elif q[0] == 'empty':
         if not a:

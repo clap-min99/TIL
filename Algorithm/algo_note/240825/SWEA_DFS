@@ -7,7 +7,6 @@ def DFS(s):
         if visited[w] == 0:
             DFS(w)
 
-
 V, E = map(int, input().split())
 adj =[[] for _ in range(V+1)]
 arr = list(map(int, input().split()))

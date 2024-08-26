@@ -17,13 +17,12 @@ for i in range(N-1, 0, -1):
             find_max.append([cnt, sub_list])
             break
 
-print(max(cnt_list))
 for i in range(N):
     if find_max[-i][0] == max(cnt_list):
         print(find_max[-i][0])
         print(*find_max[-i][1])
 
 
-
+# 시간초과 그만.....
 
 
