@@ -1,4 +1,4 @@
-T = 2
+T = 10
 for tc in range(1, T+1):
     
     def search(node):   # 해당 노드 정보를 토대로 왼쪽, 오른쪽 조사
@@ -31,4 +31,3 @@ for tc in range(1, T+1):
     print(f'#{tc}', end=' ')
     search(1)
     print()
-    
