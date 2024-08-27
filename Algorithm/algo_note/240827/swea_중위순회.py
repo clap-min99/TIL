@@ -3,9 +3,9 @@ for tc in range(1, T+1):
     
     def search(node):   # 해당 노드 정보를 토대로 왼쪽, 오른쪽 조사
         if node != 0:   # 그 노드 값이 0이 아니라면,
-            # print(node)              # 전위 순회
+            # print(node)              # 전위 순회일 때
             search(tree[node][0])      # 왼쪽을 조사
-            print(tree_info[node], end='')     # 중위 순회
+            print(tree_info[node], end='')     # 중위 순회일 때
             search(tree[node][1])      # 오른쪽을 조사
 
     N = int(input())
