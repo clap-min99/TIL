@@ -28,6 +28,7 @@ for i in range(1, N+1):  # tree 만들기
     tree[i][1] = alp_to_num[arr[i-1][2]]
 
 search(1)
+
 for i in range(N):
     preorder[i] = num_to_alp[preorder[i]]
     inorder[i] = num_to_alp[inorder[i]]
