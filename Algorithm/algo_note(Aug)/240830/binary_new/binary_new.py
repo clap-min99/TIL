@@ -23,7 +23,7 @@ for tc in range(1, T+1):
     real_code = []
     for i in range(8):
         real_code.append(code_lst[i]-salt[i])
-    print(real_code)
+
     tree = [[0,0] for _ in range(10)]
     for i in range(1, 5):
         tree[i][0] = 2*i
@@ -32,11 +32,14 @@ for tc in range(1, T+1):
 
     tree_codes = []
     search(1)
-    print(tree_codes)
+
     arr_code = []
     for i in range(1, 9):
         arr_code.append(real_code[tree_codes.index(i)])
-    print(arr_code)
-
-
+    
+    print(f'#{tc}', end =' ')
+    for i in range(8):
+        a = str(arr_code[i])
+        print(a[-1] , end ='')
+    print()
 
