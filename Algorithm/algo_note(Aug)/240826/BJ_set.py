@@ -15,7 +15,9 @@ for _ in range(M):
     if x[0] == 'remove':
         if int(x[1]) not in S:
             continue
-        S.discard(int(x[1]))
+        S.discard(int(x[1]))    
+        # set에 숫자가 존재하지 않았을 때 remove를 사용하면 error가 발생한다. 
+        # 따라서 discard를 사용! 
     if x[0] == 'check':
         if int(x[1]) in S:
             print(1)
