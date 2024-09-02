@@ -10,7 +10,7 @@ for tc in range(1, T+1):
         len_arr.append(len(arr[i]))
     
     R = max(len_arr)
-
+    
     
 
     for i in range(R):
