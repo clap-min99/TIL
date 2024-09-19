@@ -1,0 +1,21 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <a href="{% url "todos:main" %}">MAIN</a>
+    <a href="{% url "todos:create" %}">CREATE</a>
+    {% comment %} 모든 html에서 공통으로 사용할 영역을 이곳에서 작성한다. 예를
+    들어 bootstrap CDN이나, 혹은 페이지 전체를 아우르는 theme를 설정한 css 파일,
+    js파일 import nav bar와 같이 모든 페이지에서 다 보여줘야 할 영역 이
+    base.html을 상속받으면, ex) articles/index.html 에는 전체 게시글 목록, ex)
+    articles/create.html에는 게시글 생성 페이지를 보여줘야 하는데, 그걸 위한
+    영역을 지정하자. {% endcomment %} 
+    {% block content %}
+
+    {% endblock content %}
+  </body>
+</html>

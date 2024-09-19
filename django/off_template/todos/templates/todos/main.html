@@ -1,0 +1,31 @@
+﻿{% extends "base.html" %} 
+
+{% comment %} extends 코드는 무슨일이 있어도 최상단에
+작성. 주석도 안되기 때문에 무조건 첫번째 줄에 작성 {% endcomment %} 
+
+{% block content %}
+
+<h1>MAIN PAGE</h1>
+<ul>
+    {% for todo in todo_list %}
+        <li>{{ todo }}</li>
+    {% empty %}
+        <li>아직 할 일이 없습니다</li>
+    {% endfor %}
+
+    {% comment %}
+       {% if not work %}
+        <li>아직 할 말이 없습니다.</li>
+    
+    {% else %}
+        <li>{{ work }}</li>
+    
+    {% endif %}
+    
+    {% endcomment %}
+ 
+    
+
+
+</ul>
+{% endblock content %}
