@@ -1,4 +1,5 @@
-﻿N = int(input())
+﻿# 3049 다각형의 대각선
+N = int(input())
 def factorial(n):
     if n == 0:
         return 1
