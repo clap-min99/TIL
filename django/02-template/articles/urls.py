@@ -9,6 +9,6 @@ urlpatterns = [
     path('search/', views.search),
     path('throw/', views.throw),
     path('catch/', views.catch),
-    path('hello/<str:name>/', views.greeting)
+    path('hello/<str:name>/', views.greeting),
 ]
 

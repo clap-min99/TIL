@@ -1,3 +1,5 @@
+# 14940 쉬운 최단거리
+
 import sys
 from collections import deque
 input = sys.stdin.readline
@@ -10,8 +12,7 @@ def start(arr):
     for i in range(n):
         for j in range(m):
             if arr[i][j] == 2:
-                a, b = i, j
-            return a, b
+                return i, j
 
 # 원래 0 인 지점은 0으로 표시
 for i in range(n):
