@@ -1,0 +1,21 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>MOVIE</h1>
+    <a href="{% url "movies:create" %}"> 영화 등록하기 </a>
+    {% for movie in movies %}
+    <p>{{movie.pk}}. {{ movie.movie_title }}</p>
+    <p>{{ movie.content }}</p>
+    <a href="{% url "movies:detail" movie.pk %}">상세 페이지</a>
+    <hr>
+    {% endfor %}
+
+</body>
+</html>
