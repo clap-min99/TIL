@@ -12,3 +12,4 @@ for i in range(N):
         sum_lst.append(x)
     print(*sum_lst)
     sum_lst = []
+    
