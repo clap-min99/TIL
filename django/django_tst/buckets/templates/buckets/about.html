@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+{% load static %}
+{% comment %} extends 상속 태그는 반드시 가장 첫 줄에 작성되어야 합니다 {% endcomment %}
+
+
+{% comment %} base.html에서 block content로 tag를 지정해주었으므로 
+body를 content로 바꾸어주었습니다. {% endcomment %}
+{% block  content %}
+
+<h1>여행지 버킷리스트</h1>
+<p>이 사이트는 여행지 버킷리스트를 만들어보는 사이트입니다.</p>
+<p>여행지 버킷리스트를 만들어보세요.</p>
+<img src="{% static 'assets/flight01.jpg' %}" alt="noimage" style="max-width: 500px; max-height:500px;">
+
+{% endblock content  %}
