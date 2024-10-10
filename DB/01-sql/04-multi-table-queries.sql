@@ -1,3 +1,4 @@
+-- Active: 1728531640968@@127.0.0.1@3306
 -- 공통
 SELECT * FROM articles;
 SELECT * FROM users;
@@ -17,7 +18,10 @@ CREATE TABLE articles (
   title VARCHAR(50) NOT NULL,
   content VARCHAR(100) NOT NULL,
   userId INTEGER NOT NULL,
+  -- userId 컬럼은 외래키로 지정할 것이다.
+  -- 외래키로 지정시 반드시 필수적으로 따라붙는 옵션이다.
   FOREIGN KEY (userId) 
+    -- userId 외래키는 users 테이블의 id 컬럼을 참조한다.
     REFERENCES users(id)
 );
 
@@ -39,5 +43,18 @@ VALUES
 
 
 -- INNER JOIN
+SELECT * FROM articles
+INNER JOIN users
+  ON users.id = articles.userId
+WHERE users.name = '하석주';
+
 
 -- LEFT JOIN
+-- 왼쪽 테이블의 모든 레코드와 ON에 일치하는 오른쪽 테이블
+SELECT * FROM articles
+LEFT JOIN users
+  ON users.id = articles.userId;
+
+SELECT * FROM articles
+RIGHT JOIN users
+  ON users.id = articles.userId;
