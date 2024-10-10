@@ -5,8 +5,10 @@ input = sys.stdin.readline
 dij = [[0,1],[-1,0],[0,-1],[1,0]]
 
 def force(i, j):
-    global b, w
+    global w, b
+    # 방문 표시
     visited[i][j] = 1
+    
     for di, dj in dij:
         ni = i + di
         nj = j + dj
@@ -30,10 +32,13 @@ enemy = 0
 w, b = 0, 0
 for i in range(M):
     for j in range(N):
+        # 전쟁터(war)가 W이고, 방문하지 않았으면
         if war[i][j] == 'W' and not visited[i][j]:
             w = 1
             force(i, j)
             my_team += w**2
+
+        # 전쟁터(war)가 B이고 방문하지 않았으면
         elif war[i][j] == 'B'and not visited[i][j]:
             b = 1
             force(i, j)

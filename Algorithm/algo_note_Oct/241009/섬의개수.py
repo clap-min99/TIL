@@ -1,5 +1,4 @@
 # 4963 섬의 개수
-
 import sys
 input = sys.stdin.readline
 sys.setrecursionlimit(10000)
