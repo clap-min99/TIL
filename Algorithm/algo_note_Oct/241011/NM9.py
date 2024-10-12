@@ -10,6 +10,6 @@ def nums():
     stack = []
     stack.append(arr[0])
     
-    if len(q) == M:
+    if len(stack) == M:
         ans_list.append()
 
