@@ -1,4 +1,4 @@
--- Active: 1728548419894@@127.0.0.1@3306
+-- Active: 1728805801173@@127.0.0.1@3306
 
 # 30세 이상이면서 balance가 1000 이상
 SELECT
@@ -62,4 +62,12 @@ ORDER BY
 SELECT
   *
 FROM
-  users
+  users 
+WHERE
+  age >= 30
+AND
+  balance > (
+    SELECT AVG(balance)
+    FROM users
+    WHErE age >= 30
+  )

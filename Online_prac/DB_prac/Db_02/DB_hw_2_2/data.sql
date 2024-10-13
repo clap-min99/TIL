@@ -5,11 +5,11 @@ CREATE TABLE orders(
     total_amount REAL NOT NULL
 );
 
-INSERT INTO orders(order_date, total_amount)
+INSERT INTO orders(order_id, order_date, total_amount)
 VALUES
-('2023-07-15', '50.99'),
-('2023-07-16', '75.5'),
-('2023-07-17', '30.25');
+(1, '2023-07-15', 50.99),
+(2, '2023-07-16', 75.5),
+(3, '2023-07-17', 30.25);
 
 CREATE TABLE customers(
     customer_id INTEGER PRIMARY KEY,
