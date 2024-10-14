@@ -13,3 +13,4 @@ def nums():
     if len(stack) == M:
         ans_list.append()
 
+# 다음에 다시 ,, 
