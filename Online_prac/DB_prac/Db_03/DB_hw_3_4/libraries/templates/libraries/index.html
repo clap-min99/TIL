@@ -7,6 +7,7 @@
       <a href="{% url 'libraries:detail' author.pk %}">
         <li>이름 : {{ author.name }}</li>
         <li>국적 : {{ author.nationality }}</li>
+        <li>집필 권 수: {{ author.book_set.all|length }}권 </li>
       </a>
       <hr>
     {% endfor %}

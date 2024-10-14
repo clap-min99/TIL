@@ -8,11 +8,20 @@
   <p>생년월일 : {{ author.birth }}</p>
   <p>국적 : {{ author.nationality }}</p>
   <hr>
-  <a href="{% url 'libraries:index' %}">[BACK]</a>
-
+  
   <h3>신규 도서 등록</h3>
-  <p>Title: {{}} </p> 
+  <p><form action="{% url "libraries:books_create" author.pk %}" method="POST">
+    {% csrf_token %}
+    {{ book_form.as_p }}
+    <input type="submit" value='CREATE'>
+  </form> </p> 
+
+  <h4>도서 목록</h4>
+  {% for book in books %}
+  <li>제목: {{ book.title }}</li>
+  {% endfor %}
 
 
+  <a href="{% url 'libraries:index' %}">[BACK]</a>
 
 {% endblock content %}
