@@ -5,7 +5,7 @@ from django.contrib.auth import update_session_auth_hash
 from django.contrib.auth.forms import AuthenticationForm, PasswordChangeForm
 from django.contrib.auth.decorators import login_required
 from .forms import CustomUserCreationForm, CustomUserChangeForm
-
+from django.contrib.auth import get_user_model
 
 # Create your views here.
 def login(request):
@@ -83,3 +83,29 @@ def change_password(request, user_pk):
         'form': form,
     }
     return render(request, 'accounts/change_password.html', context)
+
+def profile(request, username):
+    # 어떤 유저의 프로필을 보여줄건지 유저를 조회(username 사용)
+    User = get_user_model()
+    person = User.objects.get(username=username)
+    context = {
+        'person':person
+    }
+    return render(request, 'accounts/profile.html', context)
+
+def follow(request, user_pk):
+    User = get_user_model()
+    # 팔로우 요청을 보내는 대상
+    you = User.objects.get(pk=user_pk)
+    # 나(팔로우 요청하는 사람)
+    me = request.user
+
+    # 만약 내가 상대방의 ~ 목록에 이미 있다면 팔로우 취소
+    if you != me:
+        if me in you.followers.all():
+            you.followers.remove(me)
+            # me.followings.remove(you)
+        else:
+            you.followers.add(me)
+            # me.following.add(you)
+    return redirect('accounts:profile', you.username)
