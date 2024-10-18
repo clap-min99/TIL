@@ -1,4 +1,29 @@
-# Git project
+# 06-pjt
+남의 프로필 어떻게 가는데... 
+내가 뭘할수있는데...
+
+
+## 새로 알게 된 사실
+브랜치 이동을 잘 하자...
+
+현재 브랜치에서 하던 작업이랑 dev랑 충돌나면
+
+현재 브랜치에서 `git stash`하면 임시 저장됨
+
+`git pull origin dev` 하고 임시저장된 파일은 
+
+`git stash drop`하면 버려진다
+
+
+임시저장 목록 확인 <br>
+`git stash list`
+
+임시저장 작업 불러오기(가장 최근 stash가져옴)<br>
+`git stash apply`
+<br>
+
+
+## git 프로젝트 flow 
 
 ### git flow
 
@@ -224,4 +249,7 @@
 1. `git pull origin dev`
 
 
-* merge block 당하면 resolve conflicts 누르지 말고 그 왼쪽에 있는걸로 수정하기
+* merge block 당하면 resolve conflicts 누르지 말고 그 왼쪽에 있는 걸로 수정하기
+
+---
+프로필 페이지 수정하기 

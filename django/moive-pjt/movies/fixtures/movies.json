@@ -1,0 +1,32 @@
+[
+{
+    "model": "movies.movie",
+    "pk": 1,
+    "fields": {
+        "title": "니모를 찾아서",
+        "content": "니모니모\r\n수정니모",
+        "created_at": "2024-10-18T06:53:29.240Z",
+        "updated_at": "2024-10-18T06:57:45.297Z",
+        "user": 1,
+        "like_users": []
+    }
+},
+{
+    "model": "movies.comment",
+    "pk": 1,
+    "fields": {
+        "movie": 1,
+        "user": 1,
+        "content": "???"
+    }
+},
+{
+    "model": "movies.comment",
+    "pk": 2,
+    "fields": {
+        "movie": 1,
+        "user": 1,
+        "content": "왜?"
+    }
+}
+]
