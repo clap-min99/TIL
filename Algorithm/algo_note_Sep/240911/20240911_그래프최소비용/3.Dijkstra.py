@@ -59,7 +59,7 @@ def dijkstra(start):
             heapq.heappush(pq, (new_cost, next_node))
 
 
-# 다익스트라 알고리즘 실행
+#  알고리즘 실행
 dijkstra(start)
 
 # 모든 노드로 가기 위한 최단 거리 출력
