@@ -16,7 +16,7 @@ for i in range(N):
     su = set(list(sushi)[0:k])
     if su in sushi_set:
         continue
-    sushi_set.append(set(list(sushi)[0:k]))
+    sushi_set.append(su)
     sushi.rotate(-1)
 
 # 세트의 길이를 기준으로 내림차순 정렬 
