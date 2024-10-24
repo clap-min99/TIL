@@ -24,10 +24,27 @@ visited = [[0]*M for _ in range(N)]
 
 
 def clean(r, c, d):
+
     q = deque()
-    q.append((r,c))
+    q.append((r,c,d))
 
-    nr = r + direction[d][0]
-    nc = c + direction[d][1]
+    while q:
+        
+        x, y, z = q.popleft()
+        
+        room[x][y] = 1
 
-    
+        # nx이 동,서(x축) ny가 남,북(y축)
+        nx = x + direction[z][1]
+        ny = y + direction[z][0]
+        if nx < 0 or nx >= M or ny < 0 or ny >= N:
+            continue
+        
+
+
+        # 바라보는 방향을 기준으로 
+        if room[nx][ny] == 0:
+            pass
+
+
+
