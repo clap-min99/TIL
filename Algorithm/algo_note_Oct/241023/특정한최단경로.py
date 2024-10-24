@@ -7,8 +7,7 @@ N, E = map(int, input().split())
 
 graph = [[] for _ in range(N+1)]
 
-
-
+# 양방향이므로 
 for _ in range(E):
     a, b, c = map(int, input().split())
     graph[a].append((b,c))
@@ -27,7 +26,6 @@ def dijkstra(start):
     while pq:
         dist, now = heapq.heappop(pq)
 
-        # now에 방문한적 있으면,, (방문안한 distance는 INF로 만들어놨따)
         if distance[now] < dist:
             continue
 
@@ -60,6 +58,7 @@ way1 = shortest_path[v1] + v1_start[v2] + v2_start[N]
 way2 = shortest_path[v2] + v2_start[v1] + v1_start[N]
 
 ans = min(way1, way2)
+
 
 if ans < 1e9:
     print(ans)
