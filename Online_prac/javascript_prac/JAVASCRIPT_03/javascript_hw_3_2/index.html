@@ -30,6 +30,7 @@
 			- 함수 선언식으로 작성한다.
     */
     function myJoin (array, seperator) {
+      // 네거티브 인덱싱은 파이썬이 제공해주는 것 
       let phone = ''
       for (let i = 0; i < array.length; i++) {
         phone += array[i]
@@ -39,7 +40,7 @@
       }
       return phone
     }
-
+    
     console.log(myJoin(['010', '1234', '5678'], '-')) // '010-1234-5678'
 
     /*
