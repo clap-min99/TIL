@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  
+  <script>
+    const user = {
+      name: '람쥐다',
+      'key with space': true,
+      greeting: function() {
+        return 'hello'
+      }
+    }
+
+    console.log(user)
+    console.log(user.name)
+    console.log(user.greeting())
+
+    // 추가(create)
+    user.address = 'tree'
+    
+    // 수정(update)
+    user.name = '다람쥐'
+    
+    // 삭제(delete) 
+    // delete user.name 
+
+    console.log(user.address)
+    console.log(user.name)
+
+    const person = {
+      name: '람쥐다',
+      greeting: function() {
+        return `hello my name is ${this.name}`
+      }
+    }
+
+    console.log(person.greeting())
+
+    const myFunc = function () {
+      return this
+    }
+
+    console.log(myFunc())
+
+
+    const myObj = {
+      data: 1,
+      myFunc: function () {
+        return this
+      }
+    }
+
+    console.log(myObj.myFunc())
+
+    const myObj2 = {
+      numbers2: [1,2,3],
+      myFunc: function () {
+        this.numbers2.forEach(function (number){
+          console.log(this)
+        })
+      }
+    }
+
+    console.log(myObj2.myFunc())
+
+    const myObj3 = {
+      numbers2: [1,2,3],
+      myFunc: function () {
+        this.numbers2.forEach((number) => {
+          console.log(this)
+        })
+      }
+    }
+
+    console.log(myObj3.myFunc())
+
+
+
+  </script>
+
+</body>
+</html>

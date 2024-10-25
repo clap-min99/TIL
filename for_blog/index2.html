@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  
+  
+  <script>
+    const name = '람쥐다'
+    const age = 26
+    const user = {
+      name,
+      age,
+    }
+
+    console.log(user)
+
+    const myObj1 = {
+      myFunc: function() {
+        return 'Hello'
+      }
+    }
+
+    const myObj2 = {
+      myFunc() {
+        return 'Hello'
+      }
+    }
+
+    console.log(myObj1)
+    console.log(myObj2)
+
+    const product = prompt('물건 이름을 입력해주세요')
+    const prefix = 'my'
+    const suffix = 'property'
+
+    const bag = {
+      [product] : 5,
+      [prefix+suffix]: 'value',
+    }
+
+    console.log(bag)
+
+
+    const userInfo = {
+      userName : '람쥐',
+      userId : 'daramouse',
+      email : 'daramouse@tistory.com',
+    }
+    const { userName, userId, email} = userInfo
+ 
+    console.log( userName, userId, email)
+
+
+
+
+
+    
+  </script>
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    const person = {
+      name : '람쥐다',
+      age : '345',
+      city : 'London',
+
+    }
+
+    function printInfo({ name, age, city}) {
+      console.log(`이름: ${name}, 나이: ${age}, 도시: ${city}`)
+    }
+
+    printInfo(person)
+
+
+    const user = {
+      name: '람쥐다',
+      greeting: function () {
+        return 'hello'
+      }
+    }
+
+    console.log(user.address && user.address.street)
+
+    const jsObject = {
+      coffee: 'latte',
+      iceCream: 'Chocolate',
+    }
+
+    const objToJson = JSON.stringify(jsObject)
+    console.log(objToJson)
+    console.log(typeof objToJson)
+
+    const jsonToObj = JSON.parse(objToJson)
+    console.log(jsonToObj)
+    console.log(typeof jsonToObj)
+
+
+  </script>
+</body>
+</html>
