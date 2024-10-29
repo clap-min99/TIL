@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <form action="">
+    <input type="number" value="0">
+    <button class="minus">-</button>
+    <button class="plus">+</button>
+    <input type="submit" value="submit">
+  </form>
+
+  <script>
+    // input의 value를 바꾼다.
+    // - 버튼이 클릭이 되면 
+    // input의 value를 바꾼다.
+    // 요소를 선택
+    const inputTag = document.querySelector('input[type=number]')
+    const plusBtn = document.querySelector('.plus')
+    const minusBtn = document.querySelector('.minus')
+    // + 버튼이 클릭이 되면 
+    // input의 value를 바꾼다.
+    // addEventListener를 사용해서 특정 이벤트가 발생하기를 대기시킨다.
+    plusBtn.addEventListener('click', function (){
+      // form 태그 내부의 submit input 혹은
+      // form 태그 내부의 button tag가 click 되면
+      // form 태그에는 submit 이벤트가 발생해서 데이터를 action에 정의한 곳으로 전송한다.
+      console.log(event.target)
+      // 이벤트의 기본동작을 방지한다.
+      event.preventDefault()
+
+      // input 태그는 value가 무조건 '문자열'
+      let currentValue = parseInt(inputTag.value, 10)
+      console.log(typeof currentValue)
+    })
+
+    minusBtn.addEventListener('click', function () {
+      console.log(event.target)
+      event.preventDefault()
+    })
+  </script>
+</body>
+</html>
