@@ -24,3 +24,4 @@ def alp(i, j):
 alp(0,0)
 
 print(cnt)
+# 시간초과 ㅠㅠ
