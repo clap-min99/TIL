@@ -39,7 +39,8 @@ def dijkstra(start):
     return distance
 
 dist_list = []
+arr2 = dijkstra(X)
 for i in range(1, N+1):
     arr = dijkstra(i)
-    dist_list.append(int(arr[X]))
-print(dist_list)
+    dist_list.append(int(arr[X])+int(arr2[i]))
+print(max(dist_list))
