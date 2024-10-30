@@ -39,8 +39,10 @@ def dijkstra(start):
     return distance
 
 dist_list = []
-arr2 = dijkstra(X)
+# X에서 집으로 가는 최단 거리
+back = dijkstra(X)
 for i in range(1, N+1):
-    arr = dijkstra(i)
-    dist_list.append(int(arr[X])+int(arr2[i]))
+    if i != X:
+        party = dijkstra(i)
+        dist_list.append(int(party[X]+back[i]))
 print(max(dist_list))
