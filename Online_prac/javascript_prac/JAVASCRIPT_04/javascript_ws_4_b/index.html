@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .font-crimson {
+      color: crimson;
+    }
+  </style>
+</head>
+
+<body>
+  <h1 class="heading">Hover me!</h1>
+  <h2 class="sub-heading">Double Click me!</h2>
+  <p class="contents">Lorem ipsum dolor sit amet consectetur</p>
+
+  <script>
+    const randomTexts = [
+      'Lorem ipsum dolor sit amet consectetu',
+      'adipisicing elit. Repellendus delectus quam',
+      'similique quo ipsam maxime totam alias',
+      'quibusdam repudiandae voluptas dicta',
+      'voluptas voluptatibus exercitationem officiis'
+    ]
+    
+    
+    // 아래에 코드 작성
+    const h1Tag = document.querySelector('h1')
+
+    const mouseHandler1 = function (event) {
+      h1Tag.textContent = 'I am being hovered!'
+    }
+
+    const mouseHandler2 = function (event) {
+      h1Tag.textContent = 'Hover me!'
+    }
+
+    h1Tag.addEventListener('mouseenter', mouseHandler1)
+    h1Tag.addEventListener('mouseleave', mouseHandler2)
+
+    const h2Tag = document.querySelector('h2')
+
+    const doubleHandler = function (event) {
+      h2Tag.classList.toggle('font-crimson')
+    }
+
+    h2Tag.addEventListener('dblclick', doubleHandler)
+
+    const pTag = document.querySelector('p')
+
+    const moveWheel = function (event) {
+      const randomIndex = Math.floor(Math.random()*randomTexts.length)
+      pTag.textContent = randomTexts[randomIndex]
+    }
+
+    pTag.addEventListener('wheel', moveWheel)
+  
+  </script>
+</body>
+
+</html>
