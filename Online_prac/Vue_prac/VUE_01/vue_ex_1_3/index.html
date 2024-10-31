@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <div id="app">
+    <h1>User Profile</h1>
+    <p>Name: {{user.name}}</p>
+    <p>Age: {{user.age}}</p>
+    <button>Change Name</button>
+    <button>Change Age</button>
+  </div>
+
+  <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+  <script>
+    const { createApp, ref } = Vue
+
+    const app = createApp({
+      setup() {
+        const user = ref({
+          name: 'Alice',
+          age: 30
+        })
+        const changeName = function () {
+          window.prompt('값을 입력하세요', user.name)
+        }
+
+        
+        return { user, changeName }
+      }}
+    )
+    app.mount('#app')
+  </script>
+</body>
+
+</html>
