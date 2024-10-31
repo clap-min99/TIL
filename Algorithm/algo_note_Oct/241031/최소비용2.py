@@ -1,5 +1,3 @@
-# 11779 최소비용 구하기 2
-
 import sys
 input = sys.stdin.readline
 import heapq
@@ -18,33 +16,38 @@ s,e = map(int, input().split())
 def dijkstra(start):
 
     pq = []
-
+    # 누적거리, 현재 지점
     heapq.heappush(pq, (0, start))
 
-    distance = [1e9]*(n+1)
+    # 거리와 도시를 시작점으로 하는 리스트
+    dist_path = [[1e9,[i]] for i in range(n+1) ]
 
-    distance[start] = 0
+    dist_path[start][0] = 0
 
-    
     while pq:
         dist, now = heapq.heappop(pq)
 
-        if distance[now] < dist:
+        if dist_path[now][0] < dist:
             continue
-
+        
         for next in graph[now]:
-            cost = next[1]
             next_node = next[0]
+            cost = next[1]
 
             new_cost = dist+cost
 
-            if new_cost >= distance[next_node]:
+            if new_cost >= dist_path[next_node][0]:
                 continue
 
-            distance[next_node] = new_cost
-            
+            dist_path[next_node][0] = new_cost 
+            dist_path[next_node][1] = dist_path[now][1] + [next_node]   
             heapq.heappush(pq, (new_cost, next_node))
-    return distance
+    
+    return dist_path
 
 low_cost = dijkstra(s)
 
+
+print(low_cost[e][0])
+print(len(low_cost[e][1]))
+print(*(low_cost[e][1]))
