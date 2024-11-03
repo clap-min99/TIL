@@ -26,16 +26,12 @@
         console.log(response.data[0].url)
         // 1. 이미지 주소 저장
         const imgUrl = response.data[0].url
-        return imgUrl
-      .then((imgData) => {
         // 2. img 태그 생성
         const imgTag = document.createElement('img')
         // 3. img태그의 src 속성 값 설정
         imgTag.setAttribute('src', imgUrl)
         // 4. body의 자식 태그로 img태그 추가
         document.body.appendChild(imgTag)
-      })
-
       })
       .catch((error) => {
         console.log(error)
