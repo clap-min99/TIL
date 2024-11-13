@@ -7,7 +7,7 @@
         <h2>{{ $route.params.id }}번 유저 프로필 페이지</h2>
         <h2>{{ userId }}번 유저 프로필 페이지</h2>
         <button @click="goHome">홈으로!</button>
-        <button @click="routeUpdate">100번 유저b페이지로 </button>
+        <button @click="routeUpdate">100번 유저페이지로 </button>
 
         <hr>
         <RouterView/>
