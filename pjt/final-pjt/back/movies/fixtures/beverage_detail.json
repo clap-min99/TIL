@@ -1,0 +1,230 @@
+[
+    {
+        "model": "movies.beer",
+        "pk": 1,
+        "fields": {
+            "beverages": [
+                1
+            ],
+            "subtype": "Ale",
+            "description": "상면발효를 통해 제조되는 맥주로, 발효 온도가 비교적 높아 풍부한 향과 복합적인 맛이 특징입니다. 과일, 꽃, 허브 같은 다양한 향이 나타날 수 있습니다.",
+            "examples": "jeju_ale, brewdog_punk_ipa, samuel_adams_boston_ale"
+        }
+    },
+    {
+        "model": "movies.beer",
+        "pk": 2,
+        "fields": {
+            "beverages": [
+                1
+            ],
+            "subtype": "Lager",
+            "description": "하면발효 방식으로 양조되는 맥주로, 낮은 온도에서 천천히 발효됩니다. 깔끔하고 청량감 있는 맛이 특징입니다.",
+            "examples": "heineken, budweiser, asahi_super_dry"
+        }
+    },
+    {
+        "model": "movies.beer",
+        "pk": 3,
+        "fields": {
+            "beverages": [
+                1
+            ],
+            "subtype": "Stout",
+            "description": "어두운 색을 띄는 맥주로, 커피, 초콜릿, 카라멜과 같은 고소한 맛이 특징입니다. 일반적으로 도수가 높고 무거운 질감을 가집니다.",
+            "examples": "guinness_draught, oharas_irish_stout, diego_stout"
+        }
+    },
+    {
+        "model": "movies.beer",
+        "pk": 4,
+        "fields": {
+            "beverages": [
+                1
+            ],
+            "subtype": "Wheat",
+            "description": "보리 대신 밀을 주요 재료로 사용하는 맥주로, 부드럽고 가벼운 질감과 은은한 과일 향이 특징입니다.",
+            "examples": "weihenstephaner_hefeweissbier, paulaner_hefeweibier, hoegaarden"
+        }
+    },
+    {
+        "model": "movies.beer",
+        "pk": 5,
+        "fields": {
+            "beverages": [
+                1
+            ],
+            "subtype": "Pilsner",
+            "description": "라거의 한 종류로, 체코의 필젠 지역에서 유래했습니다. 맑은 황금빛 색상과 깔끔한 쓴맛이 특징입니다.",
+            "examples": "pilsner_urquell, becks, kronenbourg_1664_blanc"
+        }
+    },
+    {
+        "model": "movies.whiskey",
+        "pk": 1,
+        "fields": {
+            "beverages": [
+                2
+            ],
+            "subtype": "Scotch",
+            "description": "스코틀랜드에서 생산되는 위스키로, 보리 몰트를 주로 사용하며 최소 3년 이상 숙성됩니다. 스모키하고 피트향이 특징입니다.",
+            "examples": "glenfiddich_12_year_old, lagavulin_16_year_old, macallan_sherry_oak_12_year_old"
+        }
+    },
+    {
+        "model": "movies.whiskey",
+        "pk": 2,
+        "fields": {
+            "beverages": [
+                2
+            ],
+            "subtype": "Irish",
+            "description": "아일랜드에서 생산되는 위스키로, 보통 피트를 사용하지 않아 부드럽고 달콤한 맛이 특징입니다. 트리플 디스틸링(3번 증류)을 통해 깔끔한 풍미를 제공합니다.",
+            "examples": "jameson_irish_whiskey, redbreast_12_year_old, bushmills_black_bush"
+        }
+    },
+    {
+        "model": "movies.whiskey",
+        "pk": 3,
+        "fields": {
+            "beverages": [
+                2
+            ],
+            "subtype": "Bourbon",
+            "description": "미국 켄터키를 중심으로 생산되는 위스키로, 최소 51% 이상의 옥수수를 원료로 사용하며 새 오크통에서 숙성됩니다. 달콤하고 바닐라, 카라멜 향이 특징입니다.",
+            "examples": "makers_mark, buffalo_trace, woodford_reserve"
+        }
+    },
+    {
+        "model": "movies.whiskey",
+        "pk": 4,
+        "fields": {
+            "beverages": [
+                2
+            ],
+            "subtype": "Rye",
+            "description": "호밀(Rye)을 51% 이상 사용하여 만드는 위스키로, 스파이시하고 드라이한 맛이 특징입니다. 미국과 캐나다에서 주로 생산됩니다.",
+            "examples": "sazerac_rye, wild_turkey_rye, bulleit_rye"
+        }
+    },
+    {
+        "model": "movies.whiskey",
+        "pk": 5,
+        "fields": {
+            "beverages": [
+                2
+            ],
+            "subtype": "Tennessee",
+            "description": "미국 테네시주에서 생산되며, 버번과 비슷하지만 숙성 전에 목탄으로 여과(Charcoal Mellowing)하는 과정이 추가됩니다.",
+            "examples": "jack_daniels_old_no_7, george_dickel_no_12, jack_daniels_single_barrel"
+        }
+    },
+    {
+        "model": "movies.whiskey",
+        "pk": 6,
+        "fields": {
+            "beverages": [
+                2
+            ],
+            "subtype": "Japanese",
+            "description": "일본에서 생산되는 위스키로, 스카치 위스키 스타일을 기반으로 하며 섬세하고 우아한 맛과 향이 특징입니다.",
+            "examples": "yamazaki_12_year_old, hibiki_harmony, nikka_from_the_barrel"
+        }
+    },
+    {
+        "model": "movies.whiskey",
+        "pk": 7,
+        "fields": {
+            "beverages": [
+                2
+            ],
+            "subtype": "SingleMalt",
+            "description": "단일 증류소에서 생산된 보리 몰트만으로 만든 위스키로, 각 증류소의 독특한 풍미를 느낄 수 있습니다.",
+            "examples": "glenlivet_12_year_old, ardbeg_10_year_old, balvenie_doublewood_12_year_old"
+        }
+    },
+    {
+        "model": "movies.whiskey",
+        "pk": 8,
+        "fields": {
+            "beverages": [
+                2
+            ],
+            "subtype": "Blended",
+            "description": "다양한 증류소에서 생산된 몰트 위스키와 그레인 위스키를 혼합하여 만든 위스키로, 균형 잡힌 맛이 특징입니다.",
+            "examples": "johnnie_walker_black_label, chivas_regal_12_year_old, dewars_white_label"
+        }
+    },
+    {
+        "model": "movies.wine",
+        "pk": 1,
+        "fields": {
+            "beverages": [
+                3
+            ],
+            "subtype": "Red",
+            "description": "적포도 품종으로 양조되어 깊고 풍부한 맛이 특징입니다. 일반적으로 체리, 블랙베리, 자두와 같은 과일 향과 함께 스파이스, 초콜릿 등의 풍미를 느낄 수 있습니다.",
+            "examples": "cabernet_sauvignon_robert_mondavi_napa_valley, merlot_chateau_petrus, pinot_noir_domaine_de_la_romaneeconti"
+        }
+    },
+    {
+        "model": "movies.wine",
+        "pk": 2,
+        "fields": {
+            "beverages": [
+                3
+            ],
+            "subtype": "White",
+            "description": "청포도 품종으로 양조되며 상쾌하고 가벼운 맛이 특징입니다. 감귤, 사과, 배와 같은 과일 향과 꽃, 미네랄 풍미가 느껴질 수 있습니다.",
+            "examples": "chardonnay_louis_latour_pouillyfuisse, sauvignon_blanc_cloudy_bay_marlborough, riesling_dr_loosen_mosel"
+        }
+    },
+    {
+        "model": "movies.wine",
+        "pk": 3,
+        "fields": {
+            "beverages": [
+                3
+            ],
+            "subtype": "Rose",
+            "description": "적포도를 짧게 발효하여 핑크색을 띠며, 레드와인과 화이트와인의 특성을 모두 가집니다. 가볍고 신선하며 과일 향이 돋보입니다.",
+            "examples": "whispering_angel_rose_cotes_de_provence, chateau_desclans_garrus_rose, miraval_rose_provence"
+        }
+    },
+    {
+        "model": "movies.wine",
+        "pk": 4,
+        "fields": {
+            "beverages": [
+                3
+            ],
+            "subtype": "Sparkling",
+            "description": "발포성 와인으로, 샴페인 방식 또는 다른 탄산화 과정을 통해 탄산이 포함됩니다. 축하 자리에서 자주 사용됩니다.",
+            "examples": "champagne_moet__chandon_brut_imperial, prosecco_la_marca_prosecco, cava_freixenet_cordon_negro_brut"
+        }
+    },
+    {
+        "model": "movies.wine",
+        "pk": 5,
+        "fields": {
+            "beverages": [
+                3
+            ],
+            "subtype": "Natural",
+            "description": "화학 첨가물 없이 유기농 재배된 포도로 전통적인 방식으로 양조된 와인으로, 자연스러운 맛과 향이 특징입니다.",
+            "examples": "domaine_lapierre_morgon_beaujolais_france, radikon_ribolla_gialla_italy, gut_oggau_josephine_austria"
+        }
+    },
+    {
+        "model": "movies.nonalcohol",
+        "pk": 1,
+        "fields": {
+            "beverages": [
+                4
+            ],
+            "subtype": "nonalcohol",
+            "description": "애들은 가라",
+            "examples": "coke, sprite, pororo, qoo, americano, tsingtao"
+        }
+    }
+]

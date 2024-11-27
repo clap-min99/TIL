@@ -1,0 +1,10 @@
+moive_id -> movie_id
+title -> title
+summary -> overview
+release_date -> released_date
+director -> director
+main_actor -> actors
+genre -> genres
+rating(연령등급) => adult
+star_rating -> vote_avg
+poster_url ->poster_url

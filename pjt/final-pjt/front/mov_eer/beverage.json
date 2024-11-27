@@ -1,0 +1,184 @@
+{
+  "beers": [
+    {
+      "subtype": "Ale",
+      "description": "에일은 상면발효 방식으로 제조되는 맥주로, 발효 온도가 비교적 높은 15~24℃에서 이루어집니다. 이로 인해 풍부하고 복합적인 향이 발달하며, 과일, 꽃, 허브 같은 향이 두드러집니다. 제조 과정에서 발효 속도가 빠르고, 상대적으로 낮은 온도에서 숙성되지 않아 깊고 강렬한 맛을 제공합니다. 특히 IPA(인디아 페일 에일)와 같은 스타일은 강한 홉 향과 쓴맛이 특징입니다. 에일은 바비큐, 매콤한 음식, 치즈와 잘 어울립니다.",
+      "examples": [
+        "Jeju Ale",
+        "BrewDog Punk IPA",
+        "Samuel Adams Boston Ale"
+      ]
+    },
+    {
+      "subtype": "Lager",
+      "description": "라거는 하면발효 방식으로 양조되는 맥주로, 낮은 온도(7~13℃)에서 천천히 발효되는 것이 특징입니다. 이 과정에서 효모가 바닥에 가라앉으며, 맑고 깨끗한 맛을 만들어냅니다. 대부분의 라거는 청량감과 깔끔한 마무리를 자랑하며, 도수가 비교적 낮아 누구나 부담 없이 즐길 수 있습니다. 필스너(Pilsner)는 라거의 대표적인 스타일로, 맥아의 단맛과 홉의 쓴맛이 완벽하게 균형을 이룹니다. 피자, 치킨, 해산물과 잘 어울립니다.",
+      "examples": [
+        "Heineken",
+        "Budweiser",
+        "Asahi Super Dry"
+      ]
+    },
+    {
+      "subtype": "Stout",
+      "description": "스타우트는 어두운 색을 띄는 맥주로, 커피, 초콜릿, 카라멜 같은 고소한 맛이 특징입니다. 강렬한 로스팅 맥아를 사용하여 깊고 진한 풍미를 자랑하며, 크리미한 질감과 높은 도수를 가질 수 있습니다. 스타우트는 아일랜드에서 유래했으며, 기Guinness와 같은 브랜드로 세계적으로 유명해졌습니다. 진한 맛 덕분에 굴, 초콜릿 케이크 같은 디저트, 혹은 훈제 고기와 완벽한 페어링을 이룹니다.",
+      "examples": [
+        "Guinness Draught",
+        "O’Hara’s Irish Stout",
+        "Diego Stout"
+      ]
+    },
+    {
+      "subtype": "Wheat Beer",
+      "description": "밀맥주는 밀을 주요 재료로 사용하는 맥주로, 가볍고 부드러운 질감과 은은한 과일 향이 특징입니다. 일반적으로 상면발효 방식을 사용하며, 바나나, 클로브, 감귤류의 향을 포함하는 독특한 풍미를 제공합니다. 독일의 바이젠과 벨기에의 위트비어 스타일이 대표적이며, 둘 다 청량하고 상쾌한 맛으로 여름철에 인기가 많습니다. 밀맥주는 샐러드, 해산물, 과일 디저트와 잘 어울립니다.",
+      "examples": [
+        "Weihenstephaner Hefeweissbier",
+        "Paulaner Hefe-Weißbier",
+        "Hoegaarden"
+      ]
+    },
+    {
+      "subtype": "Pilsner",
+      "description": "필스너는 라거의 한 종류로, 체코 필젠 지역에서 19세기에 처음 생산되었습니다. 황금빛 색상과 깨끗한 투명도가 돋보이며, 홉의 깔끔한 쓴맛과 맥아의 은은한 단맛이 균형을 이룹니다. 세계적으로 사랑받는 맥주 스타일 중 하나로, 독일과 체코 필스너가 대표적입니다. 필스너는 고온에서 발효되지 않고 차갑게 숙성되어 청량감이 뛰어나며, 특히 튀김 음식, 생선 요리, 감자칩과 잘 어울립니다.",
+      "examples": [
+        "Pilsner Urquell",
+        "Beck's",
+        "Kronenbourg 1664 Blanc"
+      ]
+    }
+  ],
+  "whiskies": [
+    {
+      "subtype": "Scotch",
+      "description": "스코틀랜드에서 생산되는 위스키로, 엄격한 규정을 준수해야만 '스카치'라는 명칭을 사용할 수 있습니다. 보리 몰트를 주원료로 사용하며, 최소 3년 이상 스코틀랜드의 오크통에서 숙성됩니다. 피트(peat)라는 이탄을 태워 만든 독특한 스모키 향이 특징이며, 지역에 따라 다양한 풍미를 제공합니다. 예를 들어, 아일라(Islay) 지역의 스카치는 강렬한 피트향과 스모키한 맛이 두드러지고, 하이랜드(Highland) 지역의 스카치는 부드럽고 과일 향이 돋보입니다. 치즈 플래터, 다크 초콜릿, 훈제 연어와 잘 어울립니다.",
+      "examples": [
+        "Glenfiddich 12 Year Old",
+        "Lagavulin 16 Year Old",
+        "Macallan Sherry Oak 12 Year Old"
+      ]
+    },
+    {
+      "subtype": "Irish",
+      "description": "아일랜드에서 생산되는 위스키로, 스카치와 달리 피트를 거의 사용하지 않아 부드럽고 달콤한 맛이 특징입니다. 전통적으로 트리플 디스틸링(3번 증류)을 통해 깔끔하고 가벼운 풍미를 제공합니다. 이 과정에서 쓴맛과 불순물이 제거되어 마시기 쉬운 맛을 자랑합니다. 바닐라, 꿀, 과일 향이 조화를 이루며, 초심자와 위스키 애호가 모두에게 적합합니다. 특히, Jameson과 같은 아일랜드 위스키는 전 세계적으로 유명하며, 아이리시 커피와 같은 칵테일에도 널리 사용됩니다.",
+      "examples": [
+        "Jameson Irish Whiskey",
+        "Redbreast 12 Year Old",
+        "Bushmills Black Bush"
+      ]
+    },
+    {
+      "subtype": "Bourbon",
+      "description": "미국 켄터키주에서 주로 생산되는 버번 위스키는 최소 51% 이상의 옥수수를 원료로 사용하며, 새로 제작된 화이트 오크통에서 숙성됩니다. 오크통의 내부를 태우는 과정을 통해 바닐라와 카라멜의 풍미가 깊게 배어납니다. 미국 법에 의해 엄격히 규제되며, 첨가물 없이 자연적으로 숙성된 순수한 맛이 특징입니다. 버번은 부드럽고 달콤한 맛을 자랑하며, 그릴 요리, 바비큐, 디저트와 훌륭한 조화를 이룹니다.",
+      "examples": [
+        "Maker's Mark",
+        "Buffalo Trace",
+        "Woodford Reserve"
+      ]
+    },
+    {
+      "subtype": "Rye",
+      "description": "호밀(Rye)을 51% 이상 사용하여 만드는 위스키로, 특유의 스파이시하고 드라이한 맛이 특징입니다. 미국과 캐나다에서 주로 생산되며, 캐나다에서는 '라이 위스키'라는 용어가 더 널리 사용됩니다. 호밀의 높은 비율 덕분에 짜릿한 향신료 풍미와 깔끔한 마무리를 제공합니다. 클래식 칵테일인 맨해튼(Manhattan)과 올드패션드(Old Fashioned)의 베이스로 인기가 많습니다. 견과류, 훈제 요리, 매콤한 음식과 잘 어울립니다.",
+      "examples": [
+        "Sazerac Rye",
+        "Wild Turkey Rye",
+        "Bulleit Rye"
+      ]
+    },
+    {
+      "subtype": "Tennessee",
+      "description": "미국 테네시주에서 생산되는 테네시 위스키는 버번과 유사하지만, 숙성 전에 '린컨 카운티 프로세스'(목탄 여과 과정)를 거친다는 점에서 차별화됩니다. 이 과정은 목탄을 통해 위스키를 여과하여 불순물을 제거하고 부드러운 풍미를 제공합니다. 테네시 위스키는 일반적으로 달콤하고 스모키하며, 바닐라와 견과류의 뉘앙스를 가지고 있습니다. Jack Daniel's는 전 세계적으로 가장 잘 알려진 테네시 위스키입니다.",
+      "examples": [
+        "Jack Daniel's Old No. 7",
+        "George Dickel No. 12",
+        "Jack Daniel's Single Barrel"
+      ]
+    },
+    {
+      "subtype": "Japanese",
+      "description": "일본 위스키는 스카치 위스키 스타일을 기반으로 하며, 일본만의 섬세함과 우아함을 더한 것이 특징입니다. 주로 몰트와 그레인 위스키를 혼합하여 복잡하고 균형 잡힌 맛을 제공합니다. 일본 위스키는 신선하고 꽃향기가 풍부하며, 마무리가 부드럽습니다. 독창적인 배합 기술과 엄격한 품질 관리로 전 세계적으로 높은 평가를 받고 있습니다. 특히 야마자키와 히비키 같은 브랜드는 위스키 애호가들 사이에서 큰 인기를 끌고 있습니다.",
+      "examples": [
+        "Yamazaki 12 Year Old",
+        "Hibiki Harmony",
+        "Nikka From the Barrel"
+      ]
+    },
+    {
+      "subtype": "Single Malt",
+      "description": "단일 증류소에서 생산된 보리 몰트만을 사용하여 만든 위스키로, 각 증류소의 독특한 개성을 그대로 느낄 수 있는 것이 특징입니다. 스카치 위스키의 대표적인 형태로, 단일 증류소의 맛과 향을 온전히 경험할 수 있습니다. 일반적으로 과일, 꿀, 오크 등의 풍미가 조화를 이루며, 오랜 숙성 과정에서 깊고 복합적인 맛이 발달합니다. 초콜릿, 치즈, 훈제 음식과 잘 어울립니다.",
+      "examples": [
+        "Glenlivet 12 Year Old",
+        "Ardbeg 10 Year Old",
+        "Balvenie DoubleWood 12 Year Old"
+      ]
+    },
+    {
+      "subtype": "Blended",
+      "description": "다양한 증류소에서 생산된 몰트 위스키와 그레인 위스키를 혼합하여 만든 위스키로, 균형 잡힌 맛이 특징입니다. 몰트 위스키의 깊은 풍미와 그레인 위스키의 부드러움이 조화를 이루며, 초심자도 부담 없이 즐길 수 있는 맛을 제공합니다. 블렌디드 위스키는 전 세계적으로 가장 널리 소비되는 형태이며, 특히 Johnnie Walker와 Chivas Regal은 블렌디드 위스키의 대표적인 브랜드로 꼽힙니다.",
+      "examples": [
+        "Johnnie Walker Black Label",
+        "Chivas Regal 12 Year Old",
+        "Dewar's White Label"
+      ]
+    }
+  ],
+  "wines": [
+    {
+      "subtype": "Red",
+      "description": "레드 와인은 적포도 품종의 껍질과 씨를 함께 발효하여 만들어집니다. 이 과정에서 깊고 풍부한 색상과 탄닌이 추출되어 복합적인 맛을 제공합니다. 체리, 블랙베리, 자두 같은 과일 향과 함께 스파이스, 초콜릿, 가죽, 흙의 뉘앙스가 느껴질 수 있습니다. 레드 와인은 주로 스테이크, 양고기, 버섯 요리 등과 잘 어울립니다. 특히, 보르도 지역의 카베르네 소비뇽이나 피노 누아는 전 세계적으로 사랑받는 레드 와인의 대표적인 예입니다.",
+      "examples": [
+        "Cabernet Sauvignon (Robert Mondavi Napa Valley)",
+        "Merlot (Château Petrus)",
+        "Pinot Noir (Domaine de la Romanée-Conti)"
+      ]
+    },
+    {
+      "subtype": "White",
+      "description": "화이트 와인은 청포도 품종을 주로 사용하여 맑고 상쾌한 맛을 제공합니다. 감귤, 사과, 배 같은 과일 향과 함께 꽃, 미네랄의 섬세한 풍미가 특징입니다. 비교적 낮은 온도에서 발효되어 신선한 산미를 유지하며, 해산물, 가벼운 샐러드, 크림 소스를 곁들인 요리와 훌륭한 조화를 이룹니다. 샤르도네와 소비뇽 블랑은 화이트 와인의 대표적인 품종으로 꼽히며, 특히 여름철에 인기가 많습니다.",
+      "examples": [
+        "Chardonnay (Louis Latour Pouilly-Fuissé)",
+        "Sauvignon Blanc (Cloudy Bay Marlborough)",
+        "Riesling (Dr. Loosen Mosel)"
+      ]
+    },
+    {
+      "subtype": "Rosé",
+      "description": "로제 와인은 적포도의 껍질을 짧게 발효하여 핑크빛 색상을 띠며, 레드와인과 화이트와인의 특성을 모두 가집니다. 신선한 과일 향과 가벼운 질감이 특징이며, 낮은 탄닌 함량 덕분에 마시기 쉬운 와인으로 알려져 있습니다. 특히 여름철 야외 파티나 가벼운 식사와 잘 어울리며, 샐러드, 해산물, 아시아 요리와도 조화를 이룹니다. 프랑스 프로방스 지역의 로제 와인은 세계적으로 유명한 로제 와인의 상징입니다.",
+      "examples": [
+        "Whispering Angel Rosé (Côtes de Provence)",
+        "Château d'Esclans Garrus Rosé",
+        "Miraval Rosé (Provence)"
+      ]
+    },
+    {
+      "subtype": "Sparkling",
+      "description": "스파클링 와인은 발포성 와인으로, 이산화탄소가 포함되어 상쾌한 탄산감을 제공합니다. 전통적인 샴페인 방식이나 샤르마 방식(탱크 발효)으로 생산되며, 축하와 기념일을 위한 완벽한 선택입니다. 샴페인은 프랑스 샴페인 지역에서만 생산되는 최고급 스파클링 와인이며, 프로세코는 이탈리아에서 생산되는 가성비 좋은 스파클링 와인으로 사랑받습니다. 해산물, 캐비아, 가벼운 디저트와 훌륭한 조화를 이룹니다.",
+      "examples": [
+        "Champagne (Moët & Chandon Brut Impérial)",
+        "Prosecco (La Marca Prosecco)",
+        "Cava (Freixenet Cordon Negro Brut)"
+      ]
+    },
+    {
+      "subtype": "Natural Wine",
+      "description": "내추럴 와인은 화학 첨가물이나 인공적인 과정을 사용하지 않고, 유기농으로 재배된 포도를 전통적인 방식으로 양조한 와인입니다. 자연 발효를 통해 만들어지며, 필터링을 최소화해 와인의 본연의 맛과 텍스처를 유지합니다. 독특하고 복합적인 풍미를 제공하며, 미세한 탄산감과 약간의 산미가 느껴질 수 있습니다. 내추럴 와인은 대체로 가벼운 음식, 채식 요리, 또는 스낵과 함께 잘 어울립니다. 이탈리아와 프랑스의 내추럴 와인은 세계적으로 큰 인기를 끌고 있습니다.",
+      "examples": [
+        "Domaine Lapierre Morgon (Beaujolais, France)",
+        "Radikon Ribolla Gialla (Italy)",
+        "Gut Oggau Josephine (Austria)"
+      ]
+    }
+  ], 
+  "nonalcohol": [
+    {
+      "subtype": "nonalcohol",
+      "description": "알코올이 없는 음료입니다.",
+      "examples": [
+        "coke",
+        "sprite",
+        "pororo",
+        "qoo",
+        "americano"
+        
+      ]
+    }
+  ]
+}

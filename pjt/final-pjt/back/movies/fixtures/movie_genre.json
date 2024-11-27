@@ -1,0 +1,173 @@
+[
+    {
+        "model": "movies.moviegenre",
+        "pk": 28,
+        "fields": {
+            "name": "Action",
+            "beverage": 1,
+            "subtype": "Ale"
+        }
+    },
+    {
+        "model": "movies.moviegenre",
+        "pk": 12,
+        "fields": {
+            "name": "Adventure",
+            "beverage": 1,
+            "subtype": "Lager"
+        }
+    },
+    {
+        "model": "movies.moviegenre",
+        "pk": 16,
+        "fields": {
+            "name": "Animation",
+            "beverage": 2,
+            "subtype": "Bourbon"
+        }
+    },
+    {
+        "model": "movies.moviegenre",
+        "pk": 35,
+        "fields": {
+            "name": "Comedy",
+            "beverage": 1,
+            "subtype": "Pilsner"
+        }
+    },
+    {
+        "model": "movies.moviegenre",
+        "pk": 80,
+        "fields": {
+            "name": "Crime",
+            "beverage": 2,
+            "subtype": "Scotch"
+        }
+    },
+    {
+        "model": "movies.moviegenre",
+        "pk": 99,
+        "fields": {
+            "name": "Documentary",
+            "beverage": 3,
+            "subtype": "Natural"
+        }
+    },
+    {
+        "model": "movies.moviegenre",
+        "pk": 18,
+        "fields": {
+            "name": "Drama",
+            "beverage": 3,
+            "subtype": "Red"
+        }
+    },
+    {
+        "model": "movies.moviegenre",
+        "pk": 10751,
+        "fields": {
+            "name": "Family",
+            "beverage": 4,
+            "subtype": "nonalcohol"
+        }
+    },
+    {
+        "model": "movies.moviegenre",
+        "pk": 14,
+        "fields": {
+            "name": "Fantasy",
+            "beverage": 3,
+            "subtype": "Sparkling"
+        }
+    },
+    {
+        "model": "movies.moviegenre",
+        "pk": 36,
+        "fields": {
+            "name": "History",
+            "beverage": 2,
+            "subtype": "Blended"
+        }
+    },
+    {
+        "model": "movies.moviegenre",
+        "pk": 27,
+        "fields": {
+            "name": "Horror",
+            "beverage": 1,
+            "subtype": "Stout"
+        }
+    },
+    {
+        "model": "movies.moviegenre",
+        "pk": 10402,
+        "fields": {
+            "name": "Music",
+            "beverage": 3,
+            "subtype": "White"
+        }
+    },
+    {
+        "model": "movies.moviegenre",
+        "pk": 9648,
+        "fields": {
+            "name": "Mystery",
+            "beverage": 2,
+            "subtype": "Rye"
+        }
+    },
+    {
+        "model": "movies.moviegenre",
+        "pk": 10749,
+        "fields": {
+            "name": "Romance",
+            "beverage": 3,
+            "subtype": "Rose"
+        }
+    },
+    {
+        "model": "movies.moviegenre",
+        "pk": 878,
+        "fields": {
+            "name": "Science Fiction",
+            "beverage": 2,
+            "subtype": "Tennessee"
+        }
+    },
+    {
+        "model": "movies.moviegenre",
+        "pk": 10770,
+        "fields": {
+            "name": "TV Movie",
+            "beverage": 1,
+            "subtype": "Wheat"
+        }
+    },
+    {
+        "model": "movies.moviegenre",
+        "pk": 53,
+        "fields": {
+            "name": "Thriller",
+            "beverage": 2,
+            "subtype": "SingleMalt"
+        }
+    },
+    {
+        "model": "movies.moviegenre",
+        "pk": 10752,
+        "fields": {
+            "name": "War",
+            "beverage": 2,
+            "subtype": "Japanese"
+        }
+    },
+    {
+        "model": "movies.moviegenre",
+        "pk": 37,
+        "fields": {
+            "name": "Western",
+            "beverage": 2,
+            "subtype": "Irish"
+        }
+    }
+]

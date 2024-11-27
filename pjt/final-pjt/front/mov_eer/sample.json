@@ -1,0 +1,85 @@
+{
+    "beers": [
+      {
+        "subtype": "Ale",
+        "description": "상면발효를 통해 제조되는 맥주로, 발효 온도가 비교적 높아 풍부한 향과 복합적인 맛이 특징입니다. 과일, 꽃, 허브 같은 다양한 향이 나타날 수 있습니다.",
+        "examples": [
+          "Guinness Ale",
+          "BrewDog Punk IPA",
+          "Samuel Adams Boston Ale"
+        ]
+      },
+      {
+        "subtype": "Lager",
+        "description": "하면발효 방식으로 양조되는 맥주로, 낮은 온도에서 천천히 발효됩니다. 깔끔하고 청량감 있는 맛이 특징입니다.",
+        "examples": [
+          "Heineken",
+          "Budweiser",
+          "Asahi Super Dry"
+        ]
+      }
+    ],
+    "whiskies": [
+      {
+        "subtype": "Scotch",
+        "description": "스코틀랜드에서 생산되는 위스키로, 보리 몰트를 주로 사용하며 최소 3년 이상 숙성됩니다. 스모키하고 피트향이 특징입니다.",
+        "examples": [
+          "Glenfiddich 12 Year Old",
+          "Lagavulin 16 Year Old",
+          "Macallan Sherry Oak 12 Year Old"
+        ]
+      },
+      {
+        "subtype": "Irish",
+        "description": "아일랜드에서 생산되는 위스키로, 보통 피트를 사용하지 않아 부드럽고 달콤한 맛이 특징입니다. 트리플 디스틸링(3번 증류)을 통해 깔끔한 풍미를 제공합니다.",
+        "examples": [
+          "Jameson Irish Whiskey",
+          "Redbreast 12 Year Old",
+          "Bushmills Black Bush"
+        ]
+      },
+      {
+        "subtype": "Bourbon",
+        "description": "미국 켄터키를 중심으로 생산되는 위스키로, 최소 51% 이상의 옥수수를 원료로 사용하며 새 오크통에서 숙성됩니다. 달콤하고 바닐라, 카라멜 향이 특징입니다.",
+        "examples": [
+          "Maker's Mark",
+          "Buffalo Trace",
+          "Woodford Reserve"
+        ]
+      }
+    ],
+    "wines": [
+      {
+        "subtype": "Red",
+        "description": "적포도 품종으로 양조되어 깊고 풍부한 맛이 특징입니다. 일반적으로 체리, 블랙베리, 자두와 같은 과일 향과 함께 스파이스, 초콜릿 등의 풍미를 느낄 수 있습니다.",
+        "examples": [
+          "Cabernet Sauvignon (Robert Mondavi Napa Valley)",
+          "Merlot (Château Petrus)",
+          "Pinot Noir (Domaine de la Romanée-Conti)"
+        ]
+      },
+      {
+        "subtype": "White",
+        "description": "청포도 품종으로 양조되며 상쾌하고 가벼운 맛이 특징입니다. 감귤, 사과, 배와 같은 과일 향과 꽃, 미네랄 풍미가 느껴질 수 있습니다.",
+        "examples": [
+          "Chardonnay (Louis Latour Pouilly-Fuissé)",
+          "Sauvignon Blanc (Cloudy Bay Marlborough)",
+          "Riesling (Dr. Loosen Mosel)"
+        ]
+      }
+    ], 
+    "nonalcohol": [
+      {
+        "subtype": "nonalcohol",
+        "description": "알코올이 없는 음료입니다.",
+        "examples": [
+        "coke",
+        "sprite",
+        "pororo",
+        "americano",
+        "qoo"
+        ]
+      }
+    ]
+  }
+  

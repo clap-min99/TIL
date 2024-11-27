@@ -1,0 +1,33 @@
+{
+    "cocktails": [
+        {
+        "subtype": "sweet",
+        "description": "달콤하고 과일 향 또는 부드러운 맛이 돋보이는 칵테일.",
+        "examples": [
+            "Hendrick's Gin & Tonic",
+            "Mojito",
+            "Pina Colada",
+            "Cosmopolitan",
+            "Espresso Martini",
+            "Amaretto Sour",
+            "Mai Tai"
+        ]
+        },
+        {
+        "subtype": "unsweet",
+        "description": "강렬하거나 상쾌한 맛이 특징인 덜 달콤한 칵테일.",
+        "examples": [
+            "Old Fashioned",
+            "Negroni",
+            "Whiskey Sour",
+            "Martini",
+            "Daiquiri",
+            "Bloody Mary",
+            "Long Island Iced Tea",
+            "Aperol Spritz",
+            "Dark 'n' Stormy",
+            "Caipirinha"
+        ]
+        }
+    ]
+}

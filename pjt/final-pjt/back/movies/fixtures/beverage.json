@@ -1,0 +1,30 @@
+[
+    {
+      "model": "movies.beverage", 
+      "pk": 1,
+      "fields": {
+        "type": "Beer"
+      }
+    },
+    {
+      "model": "movies.beverage",
+      "pk": 2,
+      "fields": {
+        "type": "Whiskey"
+      }
+    },
+    {
+      "model": "movies.beverage",
+      "pk": 3,
+      "fields": {
+        "type": "Wine"
+      }
+    },
+    {
+        "model": "movies.beverage",
+        "pk": 4,
+        "fields": {
+          "type": "NonAlcohol"
+        }
+      }
+]
