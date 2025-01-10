@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="root"></div>
+</body>
+    <script src="https://unpkg.com/react@17.0.2/umd/react.production.min.js"></script>
+    <script src="https://unpkg.com/react-dom@17.0.2/umd/react-dom.production.min.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <script type="text/babel">
+        
+        const root = document.getElementById("root") 
+        
+        function Title() {
+            return (<h3 id="title" onMouseEnter={() => console.log("mouse onMouseEnter")}>
+            Hello I'm a title
+            </h3>)}
+        
+        function Button() {
+            return(
+            <button 
+            style={{
+            backgroundColor: "tomato",
+        }} onClick={() => console.log("I'm clicked")
+        }>click me
+        </button>)}
+
+        const Container = () => (
+            <div>
+            <Title />
+            <Button />
+            </div>
+        )
+        ReactDOM.render(Container, root)
+
+        // createElement에서 ""에 들어가는 건 html의 태그와 같아야 한다.
+      
+        // const h3 = React.createElement(
+        //     "h3", {
+        //         onMouseEnter: () => console.log("mouse enter")
+        //     }, "Hello, I'm a span")
+        // render -> show it to the user
+        // 뭘 보여줄건지(span), span을 어디에 보여줄건지 정해야한다.
+       
+        
+
+        // const btn = React.createElement("button", {
+        //     onclick: () => console.log("I'm clicked")
+        // }, "click me")
+        // const container = React.createElement('div', null, [Title ,Button])
+        // ReactDOM.render(container, root)
+ 
+    </script>
+</html>
