@@ -1,0 +1,28 @@
+.App {
+  display: flex;
+  height: 100vh;
+}
+
+.SideBar {
+  background-color: aqua;
+  width: 200px;
+  
+}
+
+.MemoContainer {
+  background-color: beige;
+  flex: 1;
+}
+
+.MemoContainer_title {
+  width: 100;
+  box-sizing:  border-box;
+  font-size: 2rex;
+}
+
+.MemoContainer_content {
+  width: 100;
+  min-height: 600px;
+  box-sizing: border-box;
+  font-size: 1.1rex;
+}
