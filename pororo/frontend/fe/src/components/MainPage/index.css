@@ -1,0 +1,58 @@
+/* 전체 레이아웃 */
+.main-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #ffe0b1; /* 배경 색상 */
+}
+
+/* 카드 컨테이너 */
+.card-container {
+    display: flex;
+    gap: 20px;
+}
+
+/* 카드 스타일 */
+.card {
+    width: 300px;
+    height: 450px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    cursor: pointer;
+    padding: 20px;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+/* 카드 호버 효과 */
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* 카드 개별 색상 */
+.single-mode {
+    background: linear-gradient(135deg, #f28d8d, #f5b2b2);
+    color: white;
+}
+
+.multi-mode {
+    background: linear-gradient(135deg, #88c2d8, #b3e4f2);
+    color: white;
+}
+
+/* 카드 내부 텍스트 */
+.card h2 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+}
+
+.card p {
+    font-size: 1rem;
+    line-height: 1.5;
+}

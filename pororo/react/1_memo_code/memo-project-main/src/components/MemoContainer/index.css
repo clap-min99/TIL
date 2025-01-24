@@ -1,0 +1,20 @@
+.MemoContainer {
+  flex: 1;
+  padding: 20px;
+}
+.MemoContainer__title {
+  width: 100%;
+  box-sizing: border-box;
+  font-size: 2rem;
+  border: none;
+  margin-bottom: 10px;
+  outline: none;
+}
+.MemoContainer__content {
+  width: 100%;
+  min-height: 600px;
+  box-sizing: border-box;
+  font-size: 1.1rem;
+  border: none;
+  outline: none;
+}

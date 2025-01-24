@@ -1,0 +1,64 @@
+  .logo {
+        display: block;
+        margin: 0 auto 20px; /* 가운데 정렬 및 아래 여백 */
+        width: 250px; /* 로고 크기 조정 */
+        height: auto;
+    }
+  /* 폼 컨테이너 */
+  .form-container {
+    /* background: #fedfaa; */
+    padding: 10px;
+    border-radius: 12px;
+    width: 350px;
+    text-align: center;
+  }
+  
+  /* 입력 그룹 */
+  .input-group {
+    margin-bottom: 10px;
+  }
+  
+
+
+  /* 입력 필드 */
+  .input {
+    width: 100%;
+    padding: 18px;
+    font-size: 18px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* 버튼 */
+  .button {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    background-color: #7cc6ce; 
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  }
+  
+  .button:hover {
+    background-color: #5dade2; /* 호버 시 진한 파랑 */
+  }
+  
+  /* 링크 버튼 */
+  .secondary-button {
+    margin-top: 10px;
+    font-size: 14px;
+    font-weight: bold;
+    background: none;
+    border: none;
+    cursor: pointer;
+    text-decoration: none; /* 밑줄 제거 */
+    outline: none; /* 클릭 시 외곽선 제거 */
+  }
+  

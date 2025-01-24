@@ -1,0 +1,49 @@
+.stage-one-container {
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .home-button {
+    position: fixed; /* 화면의 오른쪽 위로 고정 */
+    top: 20px; /* 화면의 위쪽에서 20px 떨어짐 */
+    right: 20px; /* 화면의 오른쪽에서 20px 떨어짐 */
+    padding: 10px 20px;
+    background-color: #f67280;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: background-color 0.2s ease-in-out;
+    z-index: 1000; /* 다른 요소 위에 표시 */
+  }
+  
+  .home-button:hover {
+    background-color: #c06c84; /* 버튼 호버 색상 */
+  }
+  
+  .card-slider {
+    display: flex;
+    gap: 20px;
+    overflow-x: auto; /* 가로 스크롤 활성화 */
+    padding: 10px;
+    scroll-snap-type: x mandatory; /* 슬라이드 스냅 */
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .start-button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: #f5b041;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .start-button:hover {
+    background-color: #d68910;
+  }
